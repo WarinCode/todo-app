@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+:root{
+    --white:#fff;
+    --gray:#b6b6b6;
+    --black:#292929;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Itim', cursive;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 15px solid rgb(41, 41, 41); */
+    /* box-shadow: 0 0 50px rgb(78, 78, 78); */
+    width: 42vw;
+    height: 43vh;
+    margin: 80px auto 40px;
+    padding: 30px;
+    > label{
+        font-size: 45px;
+        font-weight: bolder;
+        margin: 10px 0 35px;
+    }
+    > input{
+        text-align: center;
+        width: 70%;
+        height: 17%;
+        padding: 5px;
+        text-indent: .43rem;
+        font-size: 25px;    
+        transition: .5s ease;
+    }
+    > input:focus{
+        border: 1px solid var(--gray);
+    }
+    & .btn-group {
+        margin: 30px 0;
+        & button{
+            width: 9.5rem;
+            height: 3rem;
+            font-size: 23px;
+            text-transform: capitalize;
+            cursor: pointer;
+            margin-inline: 1rem;
+            border: none;
+            outline: none;
+            transition: .5s ease-in;
+        }
+        & button:hover{
+            color: var(--white);
+        }
+    }
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-gap: 2rem;
+    place-items: center;
+    align-items: start;
+    > .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 24rem;
+        > ul {
+            > li{
+                margin:50px 0;
+            }
+        }
+    }
+}
+
+li{
+    position: relative;
+    list-style: decimal;
+    list-style-position: inside;
+    overflow: hidden;
+    text-align: center;
+    font-size: 26px;
+    width: 320px;
+    height: max-content;
+    padding: 20px;
+    background-color: #fff;
+    & h2{
+        font-size: 31px;
+    }
+    & input[type="checkbox"]{
+        accent-color: rgb(123, 211, 252);  
+        width: 23px;
+        height: 23px;
+    }
+    & input[type="text"]{
+        width: 70%;
+        background-color: #dddddd;
+        border: none;
+        outline: none;
+    }
+}
+
+.fa-g{
+    color: var(--black);
+    font-size:28px;
+}

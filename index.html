@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!-- cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.3.0/remixicon.min.css' integrity='sha512-tgAW/YyQHq3WCbO/Dcp7LYKKAJdCNEx1Faa0iOEygzQF1ylLv6JkBuZoVeFOqKPpsqToJC2KwUJJx+t8VQnYCg==' crossorigin='anonymous'/>
+    <title>Todo App</title>
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/92xIZAW-mdwucFX1v8kyTXlLVgZfLczHv8XCVOH1tFc0M3cTRI4q9qJLUM96PqCrgWjc" type="image/x-icon">
+</head>
+<body class="bg-blue-200">
+    <form class="border-none rounded-2xl shadow-slate-700 shadow-xl shadow-gray-800 bg-gray-100 px-2 py-3">
+        <label for="input">Todo</label>
+        <input type="text" id="input" placeholder="New Task" class="rounded-3xl bg-zinc-50 border-2 border-stone-950 outline-none" required>
+        <div class="btn-group">
+            <button type="submit" class="text-zinc-950 bg-teal-300 rounded-lg shadow-lg shadow-teal-300 drop-shadow-xl"><i class="ri-add-line"></i> add</button>
+            <button type="reset" class="text-zinc-950 bg-red-400 rounded-lg shadow-lg shadow-rose-400 drop-shadow-xl"><i class="ri-close-fill"></i> remove</button>            
+        </div>
+    </form>
+
+    <section class="container my-10">
+        <div class="box bg-gray-100 p-4 border-solid border-4 border-amber-500 rounded-md shadow-slate-700 shadow-xl shadow-gray-800">
+            <h2 class="text-4xl font-bold underline">List</h2>
+            <ul class="list"></ul>
+        </div>
+        <div class="box bg-gray-100 p-4 border-solid border-4 border-amber-500 rounded-md shadow-slate-700 shadow-xl shadow-gray-800">
+            <h2 class="text-4xl font-bold underline">Complete</h2>
+            <ul class="list-done"></ul>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
