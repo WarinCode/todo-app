@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-:root{
-    --white:#fff;
-    --gray:#b6b6b6;
-    --black:#292929;
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+:root {
+    --white: #fff;
+    --gray: #b6b6b6;
+    --black: #292929;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative;
-    font-family: 'Itim', cursive;
+    font-family: "Itim", cursive;
 }
 
 form {
@@ -28,26 +28,26 @@ form {
     height: 43vh;
     margin: 80px auto 40px;
     padding: 30px;
-    > label{
+    > label {
         font-size: 45px;
         font-weight: bolder;
         margin: 10px 0 35px;
     }
-    > input{
+    > input {
         text-align: center;
         width: 70%;
         height: 17%;
         padding: 5px;
-        text-indent: .43rem;
-        font-size: 25px;    
-        transition: .5s ease;
+        text-indent: 0.43rem;
+        font-size: 25px;
+        transition: 0.5s ease;
     }
-    > input:focus{
+    > input:focus {
         border: 1px solid var(--gray);
     }
     & .btn-group {
         margin: 30px 0;
-        & button{
+        & button {
             width: 9.5rem;
             height: 3rem;
             font-size: 23px;
@@ -56,63 +56,94 @@ form {
             margin-inline: 1rem;
             border: none;
             outline: none;
-            transition: .5s ease-in;
+            transition: 0.5s ease-in;
         }
-        & button:hover{
+        & button:hover {
             color: var(--white);
         }
     }
 }
 
-.container{
+.container {
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-gap: 2rem;
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 5rem;
     place-items: center;
     align-items: start;
-    > .box{
+    > .box {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 24rem;
         > ul {
-            > li{
-                margin:50px 0;
+            > li {
+                margin: 20px 0;
+                border-radius: 25px;
             }
         }
     }
 }
 
-li{
+li {
     position: relative;
     list-style: decimal;
     list-style-position: inside;
     overflow: hidden;
-    text-align: center;
     font-size: 26px;
     width: 320px;
+    height: 140px;
     height: max-content;
     padding: 20px;
     background-color: #fff;
-    & h2{
-        font-size: 31px;
+    & header {
+        text-align: start;
+        & h2 {
+            font-size: 39px;
+        }
+        & p{
+            text-align: end;
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #f3af1c;
+        }
     }
-    & input[type="checkbox"]{
-        accent-color: rgb(123, 211, 252);  
-        width: 23px;
-        height: 23px;
+    & .input-group{
+        text-align: center;
+        & input[type="text"] {
+            width: 70%;
+            background-color: #f1f1f1;
+            border: 1.4px rgb(209, 209, 209) solid;
+            outline: none;
+        }        
     }
-    & input[type="text"]{
-        width: 70%;
-        background-color: #dddddd;
-        border: none;
-        outline: none;
+    & .btn-group{
+        position: absolute;
+        bottom: 3%;
+        right: 3%;  
+        & input[type="checkbox"] {
+            accent-color: rgb(123, 211, 252);
+            width: 23px;
+            height: 23px;
+        }
     }
 }
 
-.fa-g{
+.fa-g {
     color: var(--black);
-    font-size:28px;
+    font-size: 28px;
+}
+
+.line {
+    color: #8d8d8d;
+    text-decoration: line-through;
+    opacity: 0.98;
+}
+.line-g {
+    color: #8d8d8d;
+    opacity: 0.98;
+    & span i {
+        color: #8d8d8d;
+    }
 }
